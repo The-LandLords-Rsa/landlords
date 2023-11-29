@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streetwear Boutique</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .category {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Streetwear Boutique</h1>
+    </header>
+
+    <nav>
+        <a href="HomePage.html">Home</a>
+        <a href="hoodies.html">Hoodies</a>
+        <a href="T-Shirts and Short pants .html">T-Shirts and Shorts</a>
+        <a href="Truckers and Beanies.html">Truckers and Beanies</a>
+        <a href="shopping cart.html">Shopping Cart</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <section>
+        <div class="category">
+            <h2>Hoodies</h2>
+            <p>Explore our cozy and stylish hoodies collection.</p>
+            <a href="hoodies.html">Shop Now</a>
+        </div>
+
+        <div class="category">
+            <h2>Trucker Caps & Beanies</h2>
+            <p>Complete your look with our trendy trucker caps.</p>
+            <a href="Truckers and Beanies.html">Shop Now</a>
+        </div>
+
+        <div class="category">
+            <h2>T-Shirts and Shorts</h2>
+            <p>Discover the latest trends in casual streetwear.</p>
+            <a href="T-Shirts and Short pants .html">Shop Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Streetwear Boutique</p>
+    </footer>
+
+	 <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal">&times;</span>
+            <h2>Signup for Specials</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Open the modal
+        function openModal() {
+            document.getElementById('signupModal').style.display = 'flex';
+        }
+
+        // Close the modal
+        function closeModal() {
+            document.getElementById('signupModal').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
+
